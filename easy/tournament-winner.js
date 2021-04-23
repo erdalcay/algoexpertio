@@ -11,8 +11,8 @@
  *  @function tournamentWinner
  *
  *  @param {Array<Array<string>>} competitions
- *    Two dimension array with each member being an array of the two teams 
- *    played a game.
+ *    Two dimensional array with each member being an array of the two teams 
+ *    that have played a game.
  *    
  *    The order of home and away teams are consistent and always at index 0 and 1 respectively.
  * 
@@ -28,8 +28,7 @@
  * 
  */
 
-
-export default function tournamentWinner(competitions, results) {
+export default function(competitions, results) {
   let maxScore = 0;
   let winner = '';
 
