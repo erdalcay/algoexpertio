@@ -15,7 +15,7 @@
  * 
  */
 
-export default function(nums, targetSum) {
+export default function twoNumberSum(nums, targetSum) {
   const visitedNums = {};
 
   for (const num of nums) {
