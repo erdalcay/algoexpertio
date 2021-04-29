@@ -1,0 +1,21 @@
+{
+  "name": "algoexpertio",
+  "version": "1.0.0",
+  "description": "Solutions to questions on AlgoExpertio.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/erdalcay/algoexpertio.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/erdalcay/algoexpertio/issues"
+  },
+  "homepage": "https://github.com/erdalcay/algoexpertio#readme"
+}

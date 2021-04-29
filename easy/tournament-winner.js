@@ -28,7 +28,7 @@
  * 
  */
 
-export default function(competitions, results) {
+export default function tournamentWinner(competitions, results) {
   let maxScore = 0;
   let winner = '';
 
