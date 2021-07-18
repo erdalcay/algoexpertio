@@ -1,18 +1,19 @@
 """
-Given an array of integers, 
-return the length of the longest 
-peak sequence.
+    Given an array of integers, 
+    return the length of the longest 
+    peak sequence.
 
-A peak is a list of adjacent integers 
-that are strictly increasing until 
-they reach a tip at which point 
-they become strictly decreasing.
+    A peak is a list of adjacent integers 
+    that are strictly increasing until 
+    they reach a tip at which point 
+    they become strictly decreasing.
 
-To form a peak, at least 3 integers
-are needed.
+    To form a peak, at least 3 integers
+    are needed.
 """
 
-def longestPeak(array):
+
+def longestPeak(array: list[int]) -> int:
     # Base case
     if len(array) < 3:
         return 0
