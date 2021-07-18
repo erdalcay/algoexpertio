@@ -1,15 +1,16 @@
 """
-	Given the waiting times for 
-	a list of queries, arrange the 
-	order of execution such that the 
-	total waiting time for all queries
-	to be executed is minimized.
+    Given the waiting times for 
+    a list of queries, arrange the 
+    order of execution such that the 
+    total waiting time for all queries
+    to be executed is minimized.
 """
 from typing import List
 
 def minimumWaitingTime(queries: List[int]) -> int:
     if not queries:
         return 0
+    
     # The minimum waiting time comes 
     # with executing queries with shorter
     # wait time first.
@@ -23,4 +24,3 @@ def minimumWaitingTime(queries: List[int]) -> int:
     # Last element does not introduce
     # any waiting time, obviously.
     return sum(queries[:-1])
-
