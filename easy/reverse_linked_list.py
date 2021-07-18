@@ -4,8 +4,8 @@
 
     Of course...
 """
-
 from __future__ import annotations
+
 
 class ListNode:
     """List node instance."""
