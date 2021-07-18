@@ -51,4 +51,4 @@ def longestPeak(array):
         # furthest possible point (from left to right).
         i = r
 
-return peak
+    return peak
