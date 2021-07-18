@@ -36,8 +36,7 @@ export default function tournamentWinner(competitions, results) {
     let gameWinner = val[results[i] ? 0 : 1];
     gameWinner in acc || (acc[gameWinner] = 0);
     acc[gameWinner] += 3;
-    acc[gameWinner] > maxScore ? (
-      maxScore = acc[gameWinner], winner = gameWinner) : void 0;
+    acc[gameWinner] > maxScore && (maxScore = acc[gameWinner], winner = gameWinner)
     return acc;
   }, {});
 
