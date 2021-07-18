@@ -19,7 +19,7 @@ def invertBinaryTree(node: BinaryTreeNode) -> None:
     """Inverts a binary tree."""
     if not node: return
 
-    # Swap left and right values, 
+    # Swap left and right children, 
     # repeat for each node.
     node.left, node.right = node.right, node.left
     invertBinaryTree(node.left)
