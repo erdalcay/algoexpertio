@@ -12,7 +12,7 @@ class BinaryTreeNode:
     def __init__(self, data: int = 0, left: BinaryTreeNode = None, right: BinaryTreeNode = None):
         self.data = data
         self.left = left
-        self.right = left
+        self.right = right
 
 
 def invertBinaryTree(node: BinaryTreeNode) -> None:
