@@ -14,7 +14,7 @@
 
 def longestPeak(array):
     # Base case
-	if len(array) < 3:
+    if len(array) < 3:
 		return 0
     
 	peak, i = 0, 1
