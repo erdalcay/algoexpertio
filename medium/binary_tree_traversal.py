@@ -1,5 +1,5 @@
 """
-    Given the head of a binary search tree,
+    Given the root of a binary search tree,
     implement three traversal functions:	
         - Pre-order
         - In-order
