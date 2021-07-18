@@ -49,6 +49,6 @@ def longestPeak(array):
 		# We can't have two peaks (l-m-r) in the given range
 		# That is why we are moving the window to the
 		# furthest possible point (from left to right).
-		i = r 
+		i = r
 		
 	return peak
