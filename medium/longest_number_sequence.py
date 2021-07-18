@@ -10,9 +10,8 @@
 def find_max_seq_length(
     sequences: list[int]
 ) -> int:
-    # Use a hashmap (constant lookup time complexit)
-    # to keep track of visited elements
-    # in the input list.
+    # Use a hashmap to keep track of 
+    # visited elements in the input list.
     visits = {num: False for num in sequences}
 
     max_seq_length = 0
