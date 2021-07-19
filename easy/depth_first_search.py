@@ -23,7 +23,6 @@ def DFS_iterative(node: GraphNode) -> Node:
         curr = stack.pop()
         if curr not in visited:
             visited.add(curr)
-            values.append(curr.value)
         for adjacent in adjacents:
             if adjacent not in visited:
                 stack.append(adjacent)
