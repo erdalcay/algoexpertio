@@ -12,10 +12,12 @@ class GraphNode:
         self.adjacents: List[GraphNode] = []
 
         
-def BFS_graph(node: GraphNode, values: List[int] = None) -> List[int]:
+def BFS_graph(node: GraphNode) -> List[int]:
     """Implements breadth first search for a graph structure using a queue."""
     if not node: return
-    if not values: values = []
+    # Stores the value of each node
+    values = []
+    # FIFO 
     queue = []
     queue.append(node)
     visited = set()
@@ -44,10 +46,10 @@ class TreeNode:
         self.right = right
 
         
-def BFS_graph(node: TreeNode) -> List[int]:
+def BFS_tree(node: TreeNode) -> List[int]:
     """Implements breadth first search for a tree structure using a queue."""
     if not node: return
-    # Stores the values of each node
+    # Stores the value of each node
     values = []
     # Using FIFO to achieve level order traversal.
     queue = []
