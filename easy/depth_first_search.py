@@ -32,8 +32,8 @@ def DFS_iterative(node: GraphNode) -> None:
 def DFS_recursive(node: GraphNode, values: List[int] = None, visited: Set[GraphNode] = None) -> List[int]:
     """Recursive implementation for graph dfs."""
     if not node: return
-    if not values: values = []
-    if not visited: visited = set()
+    if values is None: values = []
+    if visited is None: visited = set()
     if node in visited: return
     visited.add(node)
     values.append(node.value)
