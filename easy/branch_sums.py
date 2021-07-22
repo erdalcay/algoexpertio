@@ -26,11 +26,11 @@ def branchSums_iterative(root: BinaryTree) -> List[int]:
         value, node = stack.pop()
         if not node.left and not node.right:
             sums.append(value)
-        if node.left:
-            stack.append((value + node.left.value, node.left))
         if node.right:
             stack.append((value + node.right.value, node.right))
-    return list(reversed(sums))
+        if node.left:
+            stack.append((value + node.left.value, node.left))
+    return sums
 
 
 def branchSums_recursive(root: BinaryTree, carry: int = 0, sums: List[int] = None) -> List[int]:
