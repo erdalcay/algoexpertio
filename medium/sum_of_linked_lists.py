@@ -21,24 +21,21 @@ def sumOfLinkedLists(l1: LinkedList, l2: LinkedList) -> LinkedList:
         total = l1.value + l2.value + carry
         carry = 1 if total >= 10 else 0
         total = total % 10 if total >= 10 else total
-        node = LinkedList(total)
-        curr.next = curr = node
+        curr.next = curr = LinkedList(total)
         l1, l2 = l1.next, l2.next
 
     while l1:
         total = l1.value + carry
         carry = 1 if total >= 10 else 0
         total = total % 10 if total >= 10 else total
-        node = LinkedList(total)
-        curr.next = curr = node
+        curr.next = curr = LinkedList(total)
         l1 = l1.next
 
     while l2:
         total = l2.value + carry
         carry = 1 if total >= 10 else 0
         total = total % 10 if total >= 10 else total
-        node = LinkedList(total)
-        curr.next = curr = node
+        curr.next = curr = LinkedList(total)
         l2 = l2.next
 
     if carry:
