@@ -7,11 +7,11 @@ from __future__ import annotations
 
 
 class LinkedList:
-    """Linked list node instance."""
+    """Linked list node constructor."""
     
     def __init__(self, value: int = 0, next: LinkedList = None):
         self.value = value
-        self.next = None
+        self.next = next
 
         
 def sumOfLinkedLists(l1: LinkedList, l2: LinkedList) -> LinkedList:
