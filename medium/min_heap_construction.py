@@ -59,13 +59,13 @@ class MinHeap:
             parent_idx = (curr_idx - 1) // 2
         return
 
-    def peek(self) -> int:
+    def peek(self):
         """Returns the item at the top of the heap."""
         if not len(self):
             return None
         return self.heap[0]
 
-    def remove(self) -> int:
+    def remove(self):
         """
             Removes the item at the top of the heap and returns it.
 
