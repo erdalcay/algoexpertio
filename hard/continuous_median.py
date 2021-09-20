@@ -11,7 +11,7 @@ from heapq import heappush, heappop
 class ContinuousMedianHandler:
     """
         Gives access to the median in constant time
-        as new number being added to the set.
+        as new numbers are being added to the set.
 
         Idea:
             . Maintain two heaps, one for left and one for right
@@ -19,7 +19,7 @@ class ContinuousMedianHandler:
             . Max heap for left side, min heap for right side.
             . Keep a size difference of maximum 1 item between
             the two heaps.
-            . Calculate the heap by peeking both heaps.
+            . Calculate the median by peeking both heaps.
     """
 
     def __init__(self):
