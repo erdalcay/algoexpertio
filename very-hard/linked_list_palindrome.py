@@ -39,4 +39,4 @@ def split_reverse_list(head: LinkedList, size: int) -> Tuple[LinkedList, LinkedL
         second = curr.next
     else:
         second = curr
-    return [prev, second]
+    return (prev, second)
