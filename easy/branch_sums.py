@@ -11,9 +11,9 @@ class BinaryTree:
     """Binary tree node instance."""
 
     def __init__(self, value: int = 0, left: BinaryTree = None, right: BinaryTree = None):
-    self.value = value
-    self.left = None
-    self.right = None
+        self.value = value
+        self.left = None
+        self.right = None
 
 
 def branchSums_iterative(root: BinaryTree) -> List[int]:
